@@ -1,0 +1,92 @@
+:root {
+    --main-bg-color: brown;
+}
+
+.content {
+    max-width: 80vw;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    margin-top: 32px;
+}
+
+.maxWidth1 {
+    max-width: 60vw;
+}
+
+.maxWidth22 {
+    max-width: 60vw;
+}
+
+.mAuto {
+    margin: auto;
+}
+
+.artPrev {
+    display: flex;
+    /* align-self: center; */
+    padding: 25px;
+}
+
+.artPrev a {
+    text-decoration: none;
+    color: black;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.navigation {
+    max-width: 90vw;
+    /* display: flex; */
+    margin: 30px;
+}
+
+.content img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10%;
+}
+
+.search,
+.createBlog,
+.extras {
+    margin: 0 14px;
+}
+
+.search {
+    align-items: end;
+    justify-content: end;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    /* border: 2px solid black; */
+}
+
+
+.btn {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    border: 2px solid black;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: gray;
+}
+
+.form-box input,
+textarea {
+    padding: 10px;
+    width: 40vw;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}

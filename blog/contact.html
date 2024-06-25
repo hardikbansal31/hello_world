@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <div class="navigation margin maxWidth">
+        <div id="navigation"></div>
+        <script>
+            $(document).ready(function () {
+                $('#navigation').load('navbar.html');
+            });
+        </script>
+    </div>
+
+    <div class="content">
+        <h2>contact us</h2>
+        <div class="contact-form content">
+            <div class="form-box">
+                <input type="text" placeholder="ur name">
+            </div>
+            <div class="form-box">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="form-box">
+                <input type="number" placeholder="ur contact no">
+            </div>
+            <div class="form-box">
+                <textarea name="" id="" cols="30" rows="10" placeholder="describe ur issue"></textarea>
+            </div>
+            <div class="form-box">
+                <button class="btn">submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

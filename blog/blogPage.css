@@ -1,0 +1,20 @@
+.blogContent {
+    /* background-color: gray; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogContent p {
+    text-align: justify;
+}
+
+.blogContent h2 {
+    text-align: center;
+}
+
+
+.blogEnd {
+    display: flex;
+    flex-direction: column;
+}

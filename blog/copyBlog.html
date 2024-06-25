@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copy blog</title>
+</head>
+
+<body>
+    <div class="navbar margin maxWidth">
+        <div class="logo margin maxWidth">
+            <a href="blog.html">Home</a>
+        </div>
+
+        <div class="createBlog margin maxWidth bt">
+            <a href="createBlog.html">createBlog</a>
+        </div>
+
+        <div class="extras margin maxWidth">
+            <li>categories</li>
+            <li>about us</li>
+            <li> <a href="contact.html">contact us</a></li>
+        </div>
+
+        <div class="search margin maxWidth">
+            <form action="search.html">
+                <input class="form-input search" type="text" name="query" placeholder="Search..." id="search">
+                <button class="btn">search</button>
+            </form>
+        </div>
+
+    </div>
+    <hr>
+
+    <div class="space">space here</div>
+    <script>
+        const heading = document.createElement('h1');
+        const blog = document.createElement('p');
+        const space = document.querySelector('.space');
+
+        const tempHead = localStorage.getItem("title");
+        const tempTitle = localStorage.getItem("content");
+
+        heading.innerHTML = tempHead;
+        space.appendChild(heading);
+
+        blog.innerHTML = tempTitle;
+        space.appendChild(blog);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create blog</title>
+    <!-- <link rel="stylesheet" href="utils.css"> -->
+</head>
+
+<body>
+    <div class="navbar margin maxWidth">
+        <div class="logo margin maxWidth">
+            <a href="blog.html">Home</a>
+        </div>
+
+        <div class="createBlog margin maxWidth bt">
+            <button class="btn">
+                <a href="createBlog.html">createBlog</a>
+            </button>
+        </div>
+
+        <div class="extras margin maxWidth">
+            <li>categories</li>
+            <li>about us</li>
+            <li> <a href="contact.html">contact us</a></li>
+        </div>
+
+        <div class="search margin maxWidth">
+            <form action="search.html">
+                <input class="form-input search" type="text" name="query" placeholder="Search..." id="search">
+                <button class="btn">search</button>
+            </form>
+        </div>
+
+    </div>
+    <hr>
+    <div>
+        <input type="text" placeholder="enter title of blog" id="titleOfBlog">
+        <br>
+        <textarea name="blogContent" id="contentOfBlog" cols="30" rows="10" placeholder="enter blog content"></textarea>
+        <br>
+        <button id="submit">submit</button>
+    </div>
+    <br>
+
+    <div class="cpy">blog here</div>
+    <div><a href="copyBlog.html">copy blog</a></div>
+
+    <script>
+        let btn = document.querySelector('#submit');
+        btn.addEventListener('click', () => {
+            let title = document.querySelector('#titleOfBlog').value;
+            let content = document.querySelector('#contentOfBlog').value;
+
+            const para = document.createElement('p');
+            para.innerHTML = content;
+
+            const heading = document.createElement('h1');
+            heading.innerHTML = title;
+
+            const cpy = document.querySelector('.cpy');
+            cpy.appendChild(heading);
+            cpy.appendChild(para);
+
+            localStorage.setItem("title", title);
+            localStorage.setItem("content", content);
+
+        });
+
+    </script>
+</body>
+
+</html>
