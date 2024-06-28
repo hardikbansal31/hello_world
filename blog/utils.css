@@ -4,7 +4,7 @@
 
 .content {
     max-width: 80vw;
-    background-color: gray;
+    /* background-color: gray; */
     display: flex;
     flex-direction: column;
     padding-bottom: 15px;
@@ -42,7 +42,7 @@
 
 .navigation {
     max-width: 90vw;
-    /* display: flex; */
+    display: flex;
     margin: 30px;
 }
 
